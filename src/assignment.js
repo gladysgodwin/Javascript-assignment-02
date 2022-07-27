@@ -15,15 +15,15 @@ const assignment = {};
  */
 let numbers = [1, 15, 17, 20, 22, 25];
 
-function sumOfNumbers(arrayOfNumbers){
+function sumOfNumbers(arrayOfNumbers) {
   let total = 0;
-  for(let number of arrayOfNumbers){
+  for (let number of arrayOfNumbers) {
     total += number;
   }
   return total;
 }
+assignment.sumOfNumbers = sumOfNumbers;
 
-console.log(sumOfNumbers(numbers));
 
 /**
  * Challenge - 2
@@ -38,15 +38,15 @@ numbers = [1, 14, 17, 20, 22, 25];
 function countEvenNumbers(arrayOfNumbers) {
   let count = 0;
   for (let number of arrayOfNumbers) {
-    if (number%2 === 0)
+    if (number % 2 === 0)
       count++;
-  } 
-    return count;
+  }
+  return count;
 }
-    
-console.log("The count of even numbers is",countEvenNumbers(numbers))
-  
-  
+assignment.countEvenNumbers = countEvenNumbers
+
+
+
 
 
 
@@ -67,7 +67,7 @@ console.log("The count of even numbers is",countEvenNumbers(numbers))
  * @returns Array the converted temperatures in Fahrenheit
  */
 function celsiusToFahrenheit(arrayOfNumbers) {
-    return arrayOfNumbers;
+  return arrayOfNumbers;
 }
 // assignment.celsiusToFahrenheit = celsiusToFahrenheit;
 
